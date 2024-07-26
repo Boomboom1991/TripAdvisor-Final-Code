@@ -1,24 +1,23 @@
 "use client";
-import Image from "next/image";
-import React, { useState } from "react";
-import Carousel from "react-simply-carousel";
-import { places } from "@/lib/recentViewedPlacesData";
 
+import React, { useState } from 'react';
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import Box from "@mui/material/Box";
+import RadioGroupRating from "@/lib/rating";
+import Carousel from "react-simply-carousel";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
-
-import Box from "@mui/material/Box";
-import Rating from "@mui/material/Rating";
-import StarIcon from "@mui/icons-material/Star";
 import Link from "next/link";
-
+import Image from "next/image";
+import { places } from "@/lib/recentViewedPlacesData";
 import { labels } from "@/lib/labels";
 
-export default function Trending() {
+export default function Places() {
+  const value = 3.5;
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
-    <div>
+    <div className="">
       <Carousel
         updateOnItemClick
         containerProps={{
@@ -63,48 +62,35 @@ export default function Trending() {
           },
           children: <ArrowCircleLeftIcon className="text-[#f2f3f7] text-6xl" />,
         }}
-        speed={300}
+        speed={400}
       >
-        {places.slice(0, 20).map((place, index) => (
+        {places.slice(21, 40).map((place, index) => (
           <Link href={`/places/${place.id}`} key={place.id}>
             <div className="m-4 shadow-xl hover:cursor-pointer rounded-xl hover:underline bg-white w-[300px] md:w-[300px]">
               <Image
-                src={place.images[0]}
-                className="w-full h-[300px] md:h-[300px] rounded-t-xl"
-                width="300"
-                height="300"
+                src={
+                  place.images && place.images.length > 0
+                    ? place.images[0]
+                    : "/img/no_photo.jpg"
+                }
+                className="w-full h-[300px] rounded-t-2xl md:h-[300px]"
+                width={300}
+                height={300}
                 alt={place.name || "Изображение"}
               />
 
-              <div className="p-4">
-                <div className="text-xl font-medium hover:underline transition duration-700 truncate">
-                  {place.name || "Без названия"}
+              <div className="p-2">
+                <div className="text-md md:text-xl font-medium hover:underline transition duration-700">
+                  {place.name || ""}
                 </div>
 
-                <div className="text-xl font-light hover:underline transition duration-700 truncate">
-                  {place.region || "Россия"}, {place.city}
+                <div className="text-md font-light hover:underline transition duration-700">
+                  {place.city || ""}
                 </div>
 
-                <div className="flex">
-                  <Rating
-                    name="text-feedback"
-                    value={place?.rating || 0}
-                    readOnly
-                    precision={0.5}
-                    emptyIcon={
-                      <StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />
-                    }
-                  />
-
-                  <Box
-                    sx={{
-                      ml: 1,
-                      color: (place.rating || 0) > 2 ? "green" : "red",
-                    }}
-                  >
-                    {labels[place?.rating || 0]}
-                  </Box>
-                </div>
+                <p className="p-1 rounded-full text-md font-semibold">
+                  #{place.subcategory}
+                </p>
               </div>
             </div>
           </Link>

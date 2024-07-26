@@ -1,0 +1,140 @@
+[
+    {
+        "id": 1,
+        "name": "Андреаполь",
+        "population": 6801,
+        "regionId": 70
+    },
+    {
+        "id": 2,
+        "name": "Бежецк",
+        "population": 20418,
+        "regionId": 70
+    },
+    {
+        "id": 3,
+        "name": "Белый",
+        "population": 3090,
+        "regionId": 70
+    },
+    {
+        "id": 4,
+        "name": "Бологое",
+        "population": 20498,
+        "regionId": 70
+    },
+    {
+        "id": 5,
+        "name": "Весьегонск",
+        "population": 6016,
+        "regionId": 70
+    },
+    {
+        "id": 6,
+        "name": "Вышний Волочёк",
+        "population": 45481,
+        "regionId": 70
+    },
+    {
+        "id": 7,
+        "name": "Западная Двина",
+        "population": 7783,
+        "regionId": 70
+    },
+    {
+        "id": 8,
+        "name": "Зубцов",
+        "population": 6155,
+        "regionId": 70
+    },
+    {
+        "id": 9,
+        "name": "Калязин",
+        "population": 12351,
+        "regionId": 70
+    },
+    {
+        "id": 10,
+        "name": "Кашин",
+        "population": 13757,
+        "regionId": 70
+    },
+    {
+        "id": 11,
+        "name": "Кимры",
+        "population": 43216,
+        "regionId": 70
+    },
+    {
+        "id": 12,
+        "name": "Конаково",
+        "population": 36460,
+        "regionId": 70
+    },
+    {
+        "id": 13,
+        "name": "Красный Холм",
+        "population": 4983,
+        "regionId": 70
+    },
+    {
+        "id": 14,
+        "name": "Кувшиново",
+        "population": 8857,
+        "regionId": 70
+    },
+    {
+        "id": 15,
+        "name": "Лихославль",
+        "population": 11408,
+        "regionId": 70
+    },
+    {
+        "id": 16,
+        "name": "Нелидово",
+        "population": 18102,
+        "regionId": 70
+    },
+    {
+        "id": 17,
+        "name": "Осташков",
+        "population": 15384,
+        "regionId": 70
+    },
+    {
+        "id": 18,
+        "name": "Ржев",
+        "population": 57515,
+        "regionId": 70
+    },
+    {
+        "id": 19,
+        "name": "Старица",
+        "population": 7367,
+        "regionId": 70
+    },
+    {
+        "id": 20,
+        "name": "Тверь",
+        "population": 425072,
+        "regionId": 70
+    },
+    {
+        "id": 21,
+        "name": "Торжок",
+        "population": 44439,
+        "regionId": 70
+    },
+    {
+        "id": 22,
+        "name": "Торопец",
+        "population": 11826,
+        "regionId": 70
+    },
+    {
+        "id": 23,
+        "name": "Удомля",
+        "population": 27186,
+        "regionId": 70
+    }
+]

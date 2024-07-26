@@ -1,0 +1,117 @@
+[
+    {
+        "id": 1,
+        "name": "Андреаполь",
+        "population": 6801
+    },
+    {
+        "id": 2,
+        "name": "Бежецк",
+        "population": 20418
+    },
+    {
+        "id": 3,
+        "name": "Белый",
+        "population": 3090
+    },
+    {
+        "id": 4,
+        "name": "Бологое",
+        "population": 20498
+    },
+    {
+        "id": 5,
+        "name": "Весьегонск",
+        "population": 6016
+    },
+    {
+        "id": 6,
+        "name": "Вышний Волочёк",
+        "population": 45481
+    },
+    {
+        "id": 7,
+        "name": "Западная Двина",
+        "population": 7783
+    },
+    {
+        "id": 8,
+        "name": "Зубцов",
+        "population": 6155
+    },
+    {
+        "id": 9,
+        "name": "Калязин",
+        "population": 12351
+    },
+    {
+        "id": 10,
+        "name": "Кашин",
+        "population": 13757
+    },
+    {
+        "id": 11,
+        "name": "Кимры",
+        "population": 43216
+    },
+    {
+        "id": 12,
+        "name": "Конаково",
+        "population": 36460
+    },
+    {
+        "id": 13,
+        "name": "Красный Холм",
+        "population": 4983
+    },
+    {
+        "id": 14,
+        "name": "Кувшиново",
+        "population": 8857
+    },
+    {
+        "id": 15,
+        "name": "Лихославль",
+        "population": 11408
+    },
+    {
+        "id": 16,
+        "name": "Нелидово",
+        "population": 18102
+    },
+    {
+        "id": 17,
+        "name": "Осташков",
+        "population": 15384
+    },
+    {
+        "id": 18,
+        "name": "Ржев",
+        "population": 57515
+    },
+    {
+        "id": 19,
+        "name": "Старица",
+        "population": 7367
+    },
+    {
+        "id": 20,
+        "name": "Тверь",
+        "population": 425072
+    },
+    {
+        "id": 21,
+        "name": "Торжок",
+        "population": 44439
+    },
+    {
+        "id": 22,
+        "name": "Торопец",
+        "population": 11826
+    },
+    {
+        "id": 23,
+        "name": "Удомля",
+        "population": 27186
+    }
+]

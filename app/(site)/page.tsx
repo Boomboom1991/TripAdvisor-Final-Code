@@ -1,78 +1,110 @@
 "use client";
 import SearchBox from "@/components/search/searchbox";
 import Search from "@/components/search/search";
-import Places from "@/components/places/places";
-
+import RecentViewed from "@/components/RecentViewed/RecentViewed";
 import Trending from "@/components/trending";
+import regionsData from "@/lib/regions/regions.json";
+import citiesData from "@/lib/cities/cities.json";
 
-// Import Data
-import { places } from "@/lib/data";
+import { places } from "@/lib/recentViewedPlacesData";
 import Category from "@/components/category";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const CityBreadcrumb = dynamic(() => import("@/components/CityBreadcrumb"), {
+  ssr: false,
+});
+
+interface City {
+  id: number;
+  name: string;
+  population: number;
+}
+
+interface Region {
+  id: number;
+  region: string;
+}
 
 export default function Home() {
   const [type, setType] = useState<string>("all");
   const [results, setResults] = useState<any>(places);
+  const [selectedRegion, setSelectedRegion] = useState<string>(
+    regionsData[0].region
+  );
+  const [selectedCity, setSelectedCity] = useState<string>("");
+  const [cities, setCities] = useState<City[]>([]);
+
+  useEffect(() => {
+    if (selectedRegion === "Тверская область") {
+      setCities(citiesData);
+    } else {
+      setCities([]);
+    }
+  }, [selectedRegion]);
+
+  const handleSelectRegion = (region: string) => {
+    setSelectedRegion(region);
+    setSelectedCity("");
+  };
+
+  const handleSelectCity = (city: string) => {
+    setSelectedCity(city);
+  };
 
   return (
     <main className="">
-      <div className="hidden md:block font-bold text-6xl text-center mt-24 mb-12">
-        Where to?
+      <div className="hidden md:block font-bold text-4xl text-center mt-5 mb-5">
+        Куда Вы едете?
       </div>
 
-      <SearchBox
-        type={type}
-        setType={setType}
-        setResults={setResults}
-        results={places}
-      />
       <Search results={results} setResults={setResults} places={places} />
-      <Places places={results} />
 
-      <div className="max-w-7xl mx-auto block md:flex bg-[#f2b203] p-5 space-x-5 my-10">
-        <div>
-          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/0e/80/f6/caption.jpg?w=1000&h=-1&s=1" />
-        </div>
+      <div className="max-w-7xl flex-col rounded-2xl mx-auto block md:flex bg-[] p-1 space-x-1 my-10">
+        <span className="font-bold text-xl">Выберите регион и город</span>
+        <CityBreadcrumb />
+      </div>
 
-        <div className="mt-5 md:mt-0">
-          <p className="text-3xl font-bold text-white mb-5 text-center">
-            Help Maui & others around the world
-          </p>
-          <p className="text-lg font-light text-white mt-10 md:mt-0 text-center">
-            The Tripadvisor Foundation is matching donations to World Central
-            Kitchen’s Climate Disaster Fund. Your support helps disaster
-            responses not only in Maui, but worldwide.
-            <br />
-            <button className="btn mt-3">Donate now</button>
-          </p>
+      <div className="max-w-7xl rounded-2xl mx-auto block md:flex bg-[#f2b203] p-1 space-x-1 my-10">
+        <div className="relative w-full h-[600px]">
+          <Image
+            src="/mainSlider/1.jpg"
+            width="1366"
+            height="600"
+            alt={""}
+            className="w-full h-full rounded-2xl object-cover"
+          />
+          <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-5">
+            <p className="text-3xl font-bold text-white mb-5">
+              Узнайте, какие развлечения — победители этого года выбрали Вы.
+            </p>
+            <p className="text-lg font-light text-white">
+              Награда Travellers Choice: лучшее из лучшего — 2024 в категории
+              развлечений Узнайте, какие развлечения — победители этого года
+              выбрали Вы.
+              <br />
+              <button className="btn mt-3">Посмотреть список</button>
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* Trending */}
-
-      <div className="bg-[#faf1ed]  my-5">
+      <div className="bg-[#faf1ed] my-5">
         <div className="mx-auto max-w-7xl p-2">
           <div className="m-3">
-            <div className="text-3xl font-medium">Trending Places</div>
-            <div className="text-lg font-light">Highest ranking places</div>
+            <div className="text-3xl font-bold">Вы недавно смотрели</div>
           </div>
+          <RecentViewed />
+        </div>
+      </div>
 
+      <div className="my-5">
+        <div className="mx-auto max-w-7xl p-2">
+          <div className="m-3">
+            <div className="text-3xl font-bold">Популярные места</div>
+          </div>
           <Trending />
-        </div>
-      </div>
-
-      <div className="bg-white my-5">
-        <div className="mx-auto max-w-7xl p-2">
-          <div className="m-3">
-            <div className="text-3xl font-medium">
-              Top Things to Do by category
-            </div>
-            <div className="text-lg font-light">
-              Customers Choice Best of the Best winners
-            </div>
-          </div>
-
-          <Category />
         </div>
       </div>
     </main>

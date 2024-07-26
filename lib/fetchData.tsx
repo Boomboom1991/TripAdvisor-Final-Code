@@ -1,4 +1,4 @@
-import { places } from "./data";
+import { places } from "./recentViewedPlacesData";
 
 export const fetchPlace = async (id: string) => {
   const results = places.filter((place: any) => {

@@ -39,29 +39,19 @@ function NavbarSimple() {
               </ul>
             </div>
             <a className="normal-case" href="/">
-              <img
-                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
-                className="w-52 ml-3 md:ml-0"
-              />
+              <img src="/logo.png" className="w-52 ml-3 md:ml-0" />
             </a>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 text-xl font-light">
+            <ul className="menu menu-horizontal font-bold px-1 text-xl">
               <li>
-                <a>About</a>
-              </li>
-              <li>
-                <a>Hot Spots</a>
-              </li>
-
-              <li>
-                <a>Community</a>
+                <a href="/"> Главная</a>
               </li>
             </ul>
           </div>
-          <div className="navbar-end">
+          {/* <div className="navbar-end">
             <a className="btn">Sign In</a>
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>

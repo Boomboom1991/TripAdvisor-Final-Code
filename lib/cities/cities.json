@@ -1,0 +1,265 @@
+[
+    {
+        "id": 1,
+        "name": "Андреаполь",
+        "population": 6801,
+        "regionId": 70
+    },
+    {
+        "id": 2,
+        "name": "Бежецк",
+        "population": 20418,
+        "regionId": 70
+    },
+    {
+        "id": 3,
+        "name": "Белый",
+        "population": 3090,
+        "regionId": 70
+    },
+    {
+        "id": 4,
+        "name": "Бологое",
+        "population": 20498,
+        "regionId": 70
+    },
+    {
+        "id": 5,
+        "name": "Весьегонск",
+        "population": 6016,
+        "regionId": 70
+    },
+    {
+        "id": 6,
+        "name": "Вышний Волочёк",
+        "population": 45481,
+        "regionId": 70
+    },
+    {
+        "id": 7,
+        "name": "Западная Двина",
+        "population": 7783,
+        "regionId": 70
+    },
+    {
+        "id": 8,
+        "name": "Зубцов",
+        "population": 6155,
+        "regionId": 70
+    },
+    {
+        "id": 9,
+        "name": "Калязин",
+        "population": 12351,
+        "regionId": 70
+    },
+    {
+        "id": 10,
+        "name": "Кашин",
+        "population": 13757,
+        "regionId": 70
+    },
+    {
+        "id": 11,
+        "name": "Кимры",
+        "population": 43216,
+        "regionId": 70
+    },
+    {
+        "id": 12,
+        "name": "Конаково",
+        "population": 36460,
+        "regionId": 70
+    },
+    {
+        "id": 13,
+        "name": "Красный Холм",
+        "population": 4983,
+        "regionId": 70
+    },
+    {
+        "id": 14,
+        "name": "Кувшиново",
+        "population": 8857,
+        "regionId": 70
+    },
+    {
+        "id": 15,
+        "name": "Лихославль",
+        "population": 11408,
+        "regionId": 70
+    },
+    {
+        "id": 16,
+        "name": "Нелидово",
+        "population": 18102,
+        "regionId": 70
+    },
+    {
+        "id": 17,
+        "name": "Осташков",
+        "population": 15384,
+        "regionId": 70
+    },
+    {
+        "id": 18,
+        "name": "Ржев",
+        "population": 57515,
+        "regionId": 70
+    },
+    {
+        "id": 19,
+        "name": "Старица",
+        "population": 7367,
+        "regionId": 70
+    },
+    {
+        "id": 20,
+        "name": "Тверь",
+        "population": 425072,
+        "regionId": 70
+    },
+    {
+        "id": 21,
+        "name": "Торжок",
+        "population": 44439,
+        "regionId": 70
+    },
+    {
+        "id": 22,
+        "name": "Торопец",
+        "population": 11826,
+        "regionId": 70
+    },
+    {
+        "id": 23,
+        "name": "Удомля",
+        "population": 27186,
+        "regionId": 70
+    },{
+        "id": 1,
+        "name": "Уфа",
+        "population": 1125657,
+        "regionId": 5
+    },
+    {
+        "id": 2,
+        "name": "Стерлитамак",
+        "population": 279568,
+        "regionId": 5
+    },
+    {
+        "id": 3,
+        "name": "Салават",
+        "population": 151431,
+        "regionId": 5
+    },
+    {
+        "id": 4,
+        "name": "Нефтекамск",
+        "population": 122121,
+        "regionId": 5
+    },
+    {
+        "id": 5,
+        "name": "Октябрьский",
+        "population": 119948,
+        "regionId": 5
+    },
+    {
+        "id": 6,
+        "name": "Туймазы",
+        "population": 68390,
+        "regionId": 5
+    },
+    {
+        "id": 7,
+        "name": "Белорецк",
+        "population": 66809,
+        "regionId": 5
+    },
+    {
+        "id": 8,
+        "name": "Ишимбай",
+        "population": 65392,
+        "regionId": 5
+    },
+    {
+        "id": 9,
+        "name": "Бирск",
+        "population": 41915,
+        "regionId": 5
+    },
+    {
+        "id": 10,
+        "name": "Давлеканово",
+        "population": 23956,
+        "regionId": 5
+    },
+    {
+        "id": 11,
+        "name": "Белебей",
+        "population": 58482,
+        "regionId": 5
+    },
+    {
+        "id": 12,
+        "name": "Кумертау",
+        "population": 62705,
+        "regionId": 5
+    },
+    {
+        "id": 13,
+        "name": "Мелеуз",
+        "population": 59657,
+        "regionId": 5
+    },
+    {
+        "id": 14,
+        "name": "Янаул",
+        "population": 26902,
+        "regionId": 5
+    },
+    {
+        "id": 15,
+        "name": "Благовещенск",
+        "population": 34870,
+        "regionId": 5
+    },
+    {
+        "id": 16,
+        "name": "Учалы",
+        "population": 37954,
+        "regionId": 5
+    },
+    {
+        "id": 17,
+        "name": "Баймак",
+        "population": 17080,
+        "regionId": 5
+    },
+    {
+        "id": 18,
+        "name": "Сибай",
+        "population": 62268,
+        "regionId": 5
+    },
+    {
+        "id": 19,
+        "name": "Агидель",
+        "population": 16012,
+        "regionId": 5
+    },
+    {
+        "id": 20,
+        "name": "Дюртюли",
+        "population": 31488,
+        "regionId": 5
+    },
+    {
+        "id": 21,
+        "name": "Мишкино",
+        "population": 11500,
+        "regionId": 5
+    }
+]
